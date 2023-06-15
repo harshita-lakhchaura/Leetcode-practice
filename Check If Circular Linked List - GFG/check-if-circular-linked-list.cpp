@@ -77,13 +77,13 @@ bool isCircular(Node *head)
 {
    // Your code here
    map<Node*,bool>visited;
-   Node* temp=head;
-   while(temp!=NULL)
+   Node* temp=head->next;
+   while(temp!=NULL && temp!=head)
    {
-       if(visited[temp]==true)
-       return 1;
-       visited[temp]=true;
        temp=temp->next;
    }
+   if(temp==head)
+   return 1;
+   else
    return 0;
 }
