@@ -17,16 +17,8 @@ public:
         {
             size++;
             temp=temp->next;
-        }
-        int half=size/2;
-        int original_size=size;
-        
-        while (head) {
-            if ((original_size % 2 == 0 && size == half) || (original_size % 2 != 0 && size - 1 == half)) {
-                break;
-            }
-            head = head -> next;
-            size--;
+            if(size%2==0)
+            head=head->next;
         }
         
         return head;
