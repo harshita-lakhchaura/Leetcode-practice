@@ -36,34 +36,26 @@ class Solution
     Node* segregate(Node *head) {
         
         // Add code here
-        int z=0,o=0,t=0;
-        Node* curr=head;
-        while(curr!=NULL)
-        {
-            if(curr->data==0)
-            z++;
-            if(curr->data==1)
-            o++;
-            if(curr->data==2)
-            t++;
-            curr=curr->next;
-        }
-        curr=head;
-        for(int i=0;i<z;i++)
-        {
-            curr->data=0;
-            curr=curr->next;
-        }
-        for(int i=0;i<o;i++)
-        {
-            curr->data=1;
-            curr=curr->next;
-        }
-        for(int i=0;i<t;i++)
-        {
-            curr->data=2;
-            curr=curr->next;
-        }
+    Node* temp;
+	temp=head;
+	Node* newnode;
+	int tmp;
+	
+	while(temp!=NULL)
+	{
+		newnode=temp->next;
+		while(newnode!=NULL)
+		{
+		if(temp->data>newnode->data)
+		{
+			tmp=temp->data;
+			temp->data=newnode->data;
+			newnode->data=tmp;
+		}
+		newnode=newnode->next;
+	    }
+	temp=temp->next;
+    } 
         return head;
     }
 };
