@@ -5,24 +5,24 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre style="position: relative;"><strong>Input:</strong> num = "52"
+<pre><strong>Input:</strong> num = "52"
 <strong>Output:</strong> "5"
 <strong>Explanation:</strong> The only non-empty substrings are "5", "2", and "52". "5" is the only odd number.
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre style="position: relative;"><strong>Input:</strong> num = "4206"
+<pre><strong>Input:</strong> num = "4206"
 <strong>Output:</strong> ""
 <strong>Explanation:</strong> There are no odd numbers in "4206".
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p><strong class="example">Example 3:</strong></p>
 
-<pre style="position: relative;"><strong>Input:</strong> num = "35427"
+<pre><strong>Input:</strong> num = "35427"
 <strong>Output:</strong> "35427"
 <strong>Explanation:</strong> "35427" is already an odd number.
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
