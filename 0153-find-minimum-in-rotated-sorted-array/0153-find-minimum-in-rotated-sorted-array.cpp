@@ -9,7 +9,7 @@ public:
 
             mini=min(min(mini,nums[l]),nums[mid]);
 
-            if(nums[mid]>=nums[l]) l=mid+1;   //
+            if(nums[mid]>=nums[l]) l=mid+1;   
 
             else h=mid-1;
         }
